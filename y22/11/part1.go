@@ -68,8 +68,7 @@ func doMonkeyInspection(m *Monkey) {
 }
 
 func find2Maxima() (int, int) {
-    var max = monkeys[0].inspectCount
-    var smax = max
+    var max, smax int
 
     for _, m := range monkeys {
         if m.inspectCount >= max {
